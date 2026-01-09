@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sergio the goat</title>
+   <meta name="description" content="This is my first website of this course project.">
+    <meta name="author" content=" Sergio VOlquez">
+    <title> WDD 131 - Dynamic Web Fundamentals - Sergio Volquez </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="base.css">
+    <script src="getdates.js" defer></script>
+
+
+
+
 </head>
 <body>
-    
+    <header>
+        <h1><span id="course-title" > WDD 131 - Dynamic Web fundamentals</span></h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank"></a></li>
+                <li><a href="#" target="_blank">Final Project Folder </a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <main> 
+        <h1> Sergio Volquez</h1>
+         
+        <section class="card">
+            <h2> Sergio Volquez </h2>
+            <img src="images/sergiovolquez1.jpeg" alt=" Sergio Volquez.">
+            <p> this is the information for the fist card</p>
+
+        </section>
+    </main>
+
+        <footer>
+            <p> &COPY; <span id="2026"> </span> Sergio Volquez, California. </p>
+            <p id=" last modified"> </p>
+        </footer>
+
+        <script>
+        
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+        
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
+    </main>
 </body>
 </html>
