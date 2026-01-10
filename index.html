@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="This is my first website of this course project.">
-    <meta name="author" content=" Sergio VOlquez">
-    <title> WDD 131 - Dynamic Web Fundamentals - Sergio Volquez </title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="base.css">
-    <script src="getdates.js" defer></script>
-
-
-
-
+    <title>Styled Page</title>
+    <link rel="stylesheet" href="base.css"> <!-- Link to the CSS file -->
+    <script src="getdates.js" defer></script> <!-- Reference to JavaScript file with defer -->
 </head>
 <body>
+    <!-- Header with Course Title -->
     <header>
-        <h1><span id="course-title" > WDD 131 - Dynamic Web fundamentals</span></h1>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
             <ul>
-                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a></li>
-                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank"></a></li>
-                <li><a href="#" target="_blank">Final Project Folder </a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-        
-    <main> 
-        <h1> Sergio Volquez</h1>
-         
-        <section class="card">
-            <h2> Sergio Volquez </h2>
-            <img src="images/sergiovolquez1.jpeg" alt=" Sergio Volquez.">
-            <p> this is the information for the fist card</p>
 
+    <!-- Main Content -->
+    <main>
+        <h1>Welcome to My Website</h1>
+        
+        <!-- Section with Cards -->
+        <section class="card-container">
+            <div class="card">
+                <h2>Card Title 1</h2>
+                <p>Card content goes here...</p>
+            </div>
+            <div class="card">
+                <h2>Card Title 2</h2>
+                <p>Card content goes here...</p>
+            </div>
         </section>
     </main>
 
-        <footer>
-            <p> &COPY; <span id="2026"> </span> Sergio Volquez, California. </p>
-            <p id=" last modified"> </p>
-        </footer>
-
-        <script>
-        
-        document.getElementById('currentyear').textContent = new Date().getFullYear();
-
-        
-        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
-    </script>
-    </main>
+    <!-- Footer with Dynamic Content -->
+    <footer>
+        <p>&copy; <span id="copyrightYear"></span> My Website. All rights reserved.</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
